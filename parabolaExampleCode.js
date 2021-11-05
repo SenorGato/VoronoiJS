@@ -26,18 +26,19 @@ for(i=-2;i<=2;i++) {
   // Intersection point of tangents
   xi = (y0p * x0 - y0 - y1p * x1 + y1) / (y0p - y1p);
   yi = y0p * xi - y0p * x0 + y0;
-
+  console.log("xi:", xi, "yi:", yi, "x1:", x1, "y1:", y1)
   // Rescale for rendering
   cx = (5 + x1) * 30;
   cy = (5 + y1) * 30;
 
   cix = (5 + xi) * 30;
   ciy = (5 + yi) * 30;
+
   if (i == -2) {
     ctx.moveTo(cx, cy);
   }
   else {
-    //context.lineTo(cx, cy);
+  ``
     ctx.quadraticCurveTo(cix, ciy, cx, cy);
   }
 }
