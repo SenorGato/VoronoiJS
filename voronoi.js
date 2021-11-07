@@ -77,11 +77,11 @@ function drawParabola(directrix, Point) {
         // console.log("Slope left:", slopeLeft, "Slope right:", slopeRight)
         const intersection = slopeLeft[0] * (xStart - xEnd)
         console.log("Start:", xStart, "End", xEnd, "SlopeLeft", slopeLeft[0])
-        console.log("Y:", 0, "X:", intersection)       
+        console.log("Y:", 0, "X:", intersection)     
 
         ctx.moveTo(xStart,0)
         // ctx.quadraticCurveTo(Point.x,Point.y,xEnd,0)        
-        ctx.quadraticCurveTo(,,xEnd,0)
+        // ctx.quadraticCurveTo(,,xEnd,0)
 }
 
 function circle(x,y,r) {
